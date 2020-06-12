@@ -1,0 +1,516 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+}
+
+p, form {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* NAV BAR */
+
+.nav-div {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    justify-content: space-between;
+    vertical-align: middle;
+    background-color: rgba(103, 110, 110, 0.2);
+}
+
+.nav-div a {
+    height: 100%;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.nav-list {
+    width: calc(100% - 200px);
+    text-align: right;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover, .nav-list a:active {
+    border-bottom: 2px rgb(170, 164, 164) solid;
+    color: rgb(170, 164, 164);
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0.5rem 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* SECTION 1  */
+
+.welcome_page {
+    position: relative;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("Images/two-person-inside-gym-exercising.jpg");
+    text-align: center;
+    margin: 0 auto;
+}
+
+.welcome_page h1 {
+    position: relative;
+    display: block;
+    top: 45%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 900;
+    color: #fff
+}
+
+/* SECTION 2  */
+
+.aboutme--section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.aboutme--section__content {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15%;
+}
+
+.aboutme--section__image {
+    width: 50%;
+    height: 100%;
+}
+
+.aboutme--section__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2.5rem;
+    min-height: 90%;
+    min-width: 90%;
+}
+
+.aboutme--section__content h1 {
+    margin-top: 0;
+    color: #3f3f44;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 700;
+    padding: 1rem;
+}
+
+.aboutme--section__content p {
+    color: #3f3f44;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 845px) {
+    .aboutme--section {
+        display: block;
+        width: 100%;
+        height: 90vh;
+        background-color: #f7f7f7;
+    }
+    .aboutme--section__content {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 0%;
+    }
+    .aboutme--section__image {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .aboutme--section__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 0;
+    }
+}
+
+/* SECTION 3 AND 4 */
+
+.boe {
+    background-color: #5c5b5e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+}
+
+.ktb {
+    max-width: 31rem;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.benefits_of_exercises1_content {
+    width: 100%;
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.benefits_of_exercises1_content h2, .benefits_of_exercises1_content p, .benefits_of_exercises2_content h2, .benefits_of_exercises2_content p {
+    text-align: center;
+}
+
+.benefits_of_exercises2 {
+    flex-direction: row-reverse;
+}
+
+.running_cardio_image {
+    max-width: 31rem;
+    width: auto;
+    max-height: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.benefits_of_exercises2_content {
+    width: 100%;
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 845px) {
+    .boe {
+        display: block;
+        height: auto;
+    }
+    .benefits_of_exercises1_content {
+        padding: 2rem;
+    }
+    .ktb {
+        width: 10rem;
+        padding-bottom: 0rem;
+    }
+    .benefits_of_exercises2_image {
+        display: block;
+        width: 6.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .running_cardio_image {
+        width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* WORKOUT PLAN SECTION */
+
+.workout-section {
+    background-color: #e5e4cc;
+    width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.workout-section_title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    color: #3f3f44;
+}
+
+.all_tables {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.workout-section_plan {
+    display: inline-block;
+    max-width: 33, 3%;
+    width: 33, 3%;
+    /* border: 5px solid #282829; */
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 3rem;
+    border-radius: 2%;
+}
+
+caption {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3f3f44;
+    /* text-shadow: 2px 2px 2px grey; */
+}
+
+table {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    /* padding: 2rem; */
+    border: none;
+    border-collapse: collapse;
+    table-layout: fixed;
+    max-width: 100%;
+    text-align: center;
+}
+
+thead th {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3f3f44;
+}
+
+.light-table {
+    background-color: rgba(184, 184, 184, 0.877);
+}
+
+.light-table:hover {
+    background-color: rgb(155, 154, 154);
+}
+
+.dark-table {
+    background-color: rgba(107, 100, 100, 0.877);
+}
+
+.dark-table:hover {
+    background-color: rgb(88, 82, 82);
+}
+
+thead th {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+tbody td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 845px) {
+    .all_tables {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .workout-section_plan {
+        width: 100%;
+    }
+    .tableclass {
+        margin: 0 auto;
+    }
+}
+
+/* FORM SECTION */
+
+.contactus-section {
+    background-color: #99b898;
+    height: 48vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2rem;
+}
+
+.contactus-section_contetn {
+    width: 50%;
+    max-height: fit-content;
+}
+
+.contactus-section_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form_div_name, .form-div-email {
+    background-color: #99b898;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form_div_name input, .form-div-email input {
+    background-color: #99b898;
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    margin-top: 0.5rem;
+    padding-top: 0.9rem;
+    border: none;
+    outline: none;
+}
+
+.form_div_name label, .form-div-email label {
+    margin-top: 1rem;
+    background-color: #99b898;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.form_div_name label::after, .form-div-email label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid rgba(107, 100, 100, 0.877);
+    transform: translate(-100%);
+    transition: all 0.3 ease;
+}
+
+.form_name, .form_email {
+    background-color: #99b898;
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.form_div_name input:focus+.label-name .form_name, .form-div-email input:focus+.label-name .form_email {
+    transform: translateY(-150%);
+    color: #3f3f44;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form_div_name input:valid+.label-name .form_name, .form-div-email input:valid+.label-name .form_email {
+    transform: translateY(-150%);
+    color: #3f3f44;
+    font-family: 'Nunito', sans-serif;
+}
+
+.form_div_name input:focus+.label-name::after, .form_div_name input:valid+.label-name::after {
+    transform: translateX(0%);
+}
+
+.form-div-email input:focus+.label-name::after, .form-div-email input:valid+.label-name::after {
+    transform: translateX(0%);
+}
+
+.form-textarea {
+    width: 50%;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    height: 50%;
+}
+
+.form-textarea:hover {
+    color: #3f3f44;
+    font-family: 'Nunito', sans-serif;
+}
+
+.message {
+    margin-top: 1rem;
+    padding-top: 2rem;
+}
+
+textarea {
+    background-color: #99b898;
+    resize: none;
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+textarea:focus {
+    font-family: 'Nunito', sans-serif;
+    outline: 3px solid #3f3f44;
+    ;
+}
+
+.submit_button {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    background-color: #99b898;
+    Color: black;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 5%;
+    width: 20%;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 845px) {
+    .contactus-section {
+        display: block;
+        height: auto;
+    }
+    .contactus-section_contetn {
+        text-align: center;
+        width: 100%;
+    }
+    .contactus-section {
+        display: block;
+        flex-direction: none;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #706c61;
+    color: #fff;
+    padding: 2rem;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+footer div:nth-child(2) {
+    text-align: center;
+    padding: 0.5rem;
+}
