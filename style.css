@@ -79,6 +79,7 @@ h1, h2 {
     color: #fff
 }
 
+
 /* SECTION 2  */
 
 .aboutme--section {
@@ -128,7 +129,8 @@ h1, h2 {
     .aboutme--section {
         display: block;
         width: 100%;
-        height: 90vh;
+        height: 100vh;
+        max-height: 110vh;
         background-color: #f7f7f7;
     }
     .aboutme--section__content {
@@ -141,12 +143,13 @@ h1, h2 {
         width: 100%;
         height: 50%;
     }
-    
     .aboutme--section__image img {
         width: 100%;
         height: 100%;
         object-fit: contain;
         padding: 0;
+        padding-bottom: 0.5rem;
+        margin: 0.5rem;
     }
 }
 
