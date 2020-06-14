@@ -20,13 +20,42 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <!-- BOOTSTRAP - NAV -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- CSS STYLE -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <div class="nav-div">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-gradient-light text-dark">
+            <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> <img class="Icon_HomePage" src="Images/icons8-dumbbell-64.png"
+                    alt="Icon_HomePage_button" width="50px" height="50px"></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="nav-list navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#AboutMe">About Me<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#Benefits">Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#WorkoutPlan">Workout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#ContactUs-id">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <div class="nav-div">
             <a href="index.html">
                 <img class="Icon_HomePage" src="Images/icons8-dumbbell-64.png" alt="Icon_HomePage_button" width="50px"
                     height="50px">
@@ -45,15 +74,9 @@
                     <a href="#">Contact</a>
                 </li>
             </ul>
-        </div>
-
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        </div> -->
     </header>
+
     <main>
         <section class="welcome_page">
 
@@ -109,7 +132,7 @@
                 </div>
             </section>
         </section>
-        <section class="workout-section">
+        <section class="workout-section" id="WorkoutPlan">
             <h1 class="workout-section_title">Easy 3-Day Workout Routine</h1>
             <div class="all_tables">
                 <div class="workout-section_plan workout-plan1">
@@ -202,7 +225,7 @@
             </div>
         </section>
 
-        <section class="contactus-section">
+        <section class="contactus-section" id="ContactUs-id">
             <div class="contactus-section_contetn">
                 <h1>Contact Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maiores magni, velit deserunt laborum
@@ -239,7 +262,7 @@
             <a>Copyright &copy; Filip Kaczmarek 2020r.</a>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
