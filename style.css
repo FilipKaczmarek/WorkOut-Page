@@ -135,13 +135,22 @@ h1, h2 {
     }
     .aboutme--section__content {
         width: 100%;
-        height: auto;
+        height: 40%;
         display: block;
         padding-top: 0%;
     }
+    .aboutme--section__content h1 {
+        font-size: 1.5rem;
+    }
+
+    .aboutme--section__content p {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
     .aboutme--section__image {
         width: 100%;
-        height: 50%;
+        height: 45%;
     }
     .aboutme--section__image img {
         width: 100%;
